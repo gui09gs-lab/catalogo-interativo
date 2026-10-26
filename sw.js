@@ -1,7 +1,7 @@
 // Service worker do Catálogo Interativo Kilews.
 // Páginas e catálogo: tenta a rede primeiro (para receber atualizações) e cai no cache sem internet.
 // Fontes do Google: cache primeiro.
-const VERSAO = "kw-eb1960faa0";
+const VERSAO = "kw-bbc0bd0ad6";
 const ESSENCIAIS = [
   "./",
   "index.html",
