@@ -130,6 +130,8 @@ footer{text-align:center;font-size:12px;color:var(--muted);padding:16px 16px cal
       var fluxo = new Blob([zip]).stream().pipeThrough(new DecompressionStream("gzip"));
       return new Response(fluxo).text();
     }).then(function(html){
+      // O catálogo usa a mesma chave para abrir as vistas explodidas (vistas/*.enc).
+      window.__kwChave = chave;
       document.open(); document.write(html); document.close();
     });
   }
